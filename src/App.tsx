@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import PokemonNavigation from './components/pokemon-navigation/pokemon.navigation';
 
-function App() {
-    return (
-        <div className="app">
+export default class App extends Component<{}, {}> {
 
-        </div>
-    );
+    render() {
+
+        return (
+            <div className="app">
+                <PokemonNavigation />
+            </div>
+        );
+    }
 }
-
-export default App;
